@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import {
   ArrowLeft,
   Minus,
@@ -171,7 +171,7 @@ export default function Cart() {
                 </span>
 
                 <span className="font-semibold">
-                  ?{Number(subtotal).toLocaleString("en-IN")}
+                  ₹{Number(subtotal).toLocaleString("en-IN")}
                 </span>
               </div>
 
@@ -182,7 +182,7 @@ export default function Cart() {
                   </span>
 
                   <span className="font-semibold text-emerald-600">
-                    -?{Number(discount).toLocaleString("en-IN")}
+                    -₹{Number(discount).toLocaleString("en-IN")}
                   </span>
                 </div>
               )}
@@ -195,7 +195,7 @@ export default function Cart() {
                 <span className="font-semibold">
                   {shipping === 0
                     ? "Free"
-                    : `?${Number(shipping).toLocaleString("en-IN")}`}
+                    : `₹${Number(shipping).toLocaleString("en-IN")}`}
                 </span>
               </div>
 
@@ -204,7 +204,7 @@ export default function Cart() {
                   <span className="font-bold">Total</span>
 
                   <span className="text-2xl font-black">
-                    ?{Number(total).toLocaleString("en-IN")}
+                    ₹{Number(total).toLocaleString("en-IN")}
                   </span>
                 </div>
               </div>
@@ -219,7 +219,7 @@ export default function Cart() {
             </Link>
 
             <p className="mt-4 text-center text-xs leading-5 text-slate-400">
-              Free shipping on orders above ?2,000.
+              Free shipping on orders above ₹2,000.
             </p>
           </aside>
         </div>
@@ -227,3 +227,4 @@ export default function Cart() {
     </section>
   );
 }
+

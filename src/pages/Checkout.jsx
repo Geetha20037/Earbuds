@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {
   ArrowLeft,
@@ -346,7 +346,7 @@ export default function Checkout() {
                     </p>
 
                     <p className="mt-1 text-xs text-slate-400">
-                      ?{Number(item.price).toLocaleString("en-IN")} each
+                      ₹{Number(item.price).toLocaleString("en-IN")} each
                     </p>
                   </div>
 
@@ -367,7 +367,7 @@ export default function Checkout() {
                 </span>
 
                 <span className="font-semibold">
-                  ?{Number(subtotal).toLocaleString("en-IN")}
+                  ₹{Number(subtotal).toLocaleString("en-IN")}
                 </span>
               </div>
 
@@ -379,7 +379,7 @@ export default function Checkout() {
                 <span className="font-semibold">
                   {shipping === 0
                     ? "Free"
-                    : `?${Number(shipping).toLocaleString("en-IN")}`}
+                    : `₹${Number(shipping).toLocaleString("en-IN")}`}
                 </span>
               </div>
 
@@ -387,7 +387,7 @@ export default function Checkout() {
                 <span className="font-bold">Total</span>
 
                 <span className="text-xl font-black">
-                  ?{Number(total).toLocaleString("en-IN")}
+                  ₹{Number(total).toLocaleString("en-IN")}
                 </span>
               </div>
             </div>
@@ -409,3 +409,4 @@ export default function Checkout() {
     </section>
   );
 }
+

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { ShoppingBag, ArrowUpRight } from "lucide-react";
 import { useCart } from "../context/CartContext";
 import Rating from "./Rating";
@@ -62,12 +62,12 @@ export default function ProductCard({ product }) {
         <div className="mt-5 flex items-end justify-between gap-3">
           <div>
             <span className="text-xl font-black text-slate-950 dark:text-white">
-              ?{product.price.toLocaleString("en-IN")}
+              ₹{product.price.toLocaleString("en-IN")}
             </span>
 
             {product.originalPrice && (
               <span className="ml-2 text-sm text-slate-400 line-through">
-                ?{product.originalPrice.toLocaleString("en-IN")}
+                ₹{product.originalPrice.toLocaleString("en-IN")}
               </span>
             )}
           </div>
@@ -95,3 +95,4 @@ export default function ProductCard({ product }) {
     </article>
   );
 }
+
