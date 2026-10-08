@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import {
   X,
   Minus,
@@ -185,7 +185,7 @@ export default function CartDrawer() {
                   Subtotal
                 </span>
                 <span className="font-semibold text-slate-950 dark:text-white">
-                  ?{Number(subtotal).toLocaleString("en-IN")}
+                  ₹{Number(subtotal).toLocaleString("en-IN")}
                 </span>
               </div>
 
@@ -196,7 +196,7 @@ export default function CartDrawer() {
                 <span className="font-semibold text-slate-950 dark:text-white">
                   {shipping === 0
                     ? "Free"
-                    : `?${Number(shipping).toLocaleString("en-IN")}`}
+                    : `?₹₹${Number(shipping).toLocaleString("en-IN")}`}
                 </span>
               </div>
 
@@ -206,7 +206,7 @@ export default function CartDrawer() {
                 </span>
 
                 <span className="text-xl font-black text-slate-950 dark:text-white">
-                  ?{Number(total).toLocaleString("en-IN")}
+                  ₹{Number(total).toLocaleString("en-IN")}
                 </span>
               </div>
             </div>
@@ -225,3 +225,5 @@ export default function CartDrawer() {
     </>
   );
 }
+
+
